@@ -1,0 +1,133 @@
+.sobre-bg {
+  background-color: var(--b1);
+}
+
+.sobre {
+  width: 1080px; 
+  display: flex;
+  flex-direction: row;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  align-items: center;
+  gap: 32px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.sobre-text > button {
+  margin-left: 40px;
+  max-width: max-content;
+}
+
+.sobre-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font: 500 2.5rem "Rubik";
+  background-image: linear-gradient(to bottom, var(--a2), var(--a1));
+  background-clip: text;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 28px;
+}
+
+.sobre-desc {
+  margin-left: 40px;
+  font: 400 1.125rem/1.5 "inter";
+  margin-bottom: 36px;
+}
+
+.sobre-desc span {
+  font: 600 1.125rem "inter";
+}
+.sobre-card{
+  background: linear-gradient(45deg, #00A0FD,#006AEA, #0085F3);
+  border-radius: 20px 30px 20px 30px;
+  padding: 6px;
+  transform: rotate(-12deg);
+  transform: translateY(0px);
+  animation: float 5s ease-in-out infinite;
+  box-shadow: 15px 15px 40px 10px #3d474b;
+}
+.sobre-card img {
+  z-index: 1;
+  border-radius: 100%;
+  border:solid rgb(3, 27, 58);
+  width: 300px;
+  box-shadow: 0px 5px 30px #3d474b;
+  transition: all .3s ease-out;
+}
+.sobre-card img:hover{
+  border: solid 10px rgb(3, 27, 58);
+}
+
+@keyframes float {
+  0%{transform: translateY(0px);}
+  50%{transform: translateY(-30px);}
+  100%{transform: translateY(0px);}
+}
+.detalhe1 {
+  position: absolute;
+  left: -150px;
+  top: 60px;
+  opacity: 80%;
+}
+
+.detalhe2 {
+  position: absolute;
+  right: 250px;
+  bottom: 50px;
+  opacity: 80%;
+  z-index: 0;
+}
+
+
+@media(max-width:1100px) {
+.sobre {
+  width: 100%;
+}
+}
+@media(max-width:1023px) {
+  .sobre-card img {
+    width:280px ;
+  }
+}
+@media(max-width:767px) {
+  .detalhe1, .detalhe2 {
+    display: none;
+  }
+  .sobre {
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 0;
+  }
+  .sobre-text {
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    font-size: 1.75rem;
+    margin-bottom: 24px;
+  }
+  .sobre-desc {
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 24px;
+  }
+  .sobre-text > button {
+    margin-left: 0px;
+    margin-bottom: 24px;
+  }
+  .sobre-card img {
+    max-width: 250px;
+  }
+
+  .sobre-text > .btn-download {
+    display: none;
+  }
+}

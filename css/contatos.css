@@ -1,0 +1,124 @@
+.contatos-bg {
+  /* background-color: var(--c1); */
+  background-image: url('../img/heifoo.svg');
+  background-size: cover;
+}
+
+.contatos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 90px;
+  position: relative;
+}
+
+.contatos h1 {
+  font: 500 2.5rem "Rubik";
+  background: linear-gradient(to bottom,#00A0FD,#006AEA,#0085F3);
+  background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+}
+
+.contatos-conteudo{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.contatos-conteudo img{
+  width: 50%;
+}
+
+.contatos-conteudo > div{
+  display: flex;
+  flex-direction: column;
+  gap: 32px
+}
+
+.ctt {
+  display: flex;
+  align-items: center;
+  background-color: var(--c2);
+  border-radius: 10px;
+  text-align: center;
+  transition: .3s;
+}
+
+.ctt:hover img{
+  border: 2px solid var(--border);
+}
+
+.ctt img {
+  padding: 16px;
+  background-color: #203C4C;
+  border-radius: 10px;
+  width: 62px;
+  border: 2px solid transparent;
+  transition: all .3s ease-out;
+}
+
+.ctt span {
+  padding: 0px 24px;
+  color: var(--b1);
+  font: 400 1rem "rubik";
+  word-break: break-all;
+  margin: 0 auto;
+}
+
+.up {
+  padding: 16px;
+  background-color: #203C4C;
+  position: absolute; 
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all .3s ease-out;
+}
+
+.up:hover {
+  background-color: var(--c2);
+  border: 2px solid var(--a1);
+  box-shadow: 0px 0px 15px 3px #0085F3;
+}
+
+@media(max-width: 767px) {
+  .ctt span {
+    padding: 0px 16px;
+  }
+  .ctt img {
+    width: 60px;
+    height: auto;
+  }
+  .contatos {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+  .contatos h1 {
+    font-size: 1.75rem;
+    margin-bottom: 24px;
+  }
+  .contatos-conteudo > div{
+    gap:20px;
+  }
+  .contatos-conteudo  > img {
+    display: none;
+  }
+}
+
+@media(max-width:340px) {
+  .ctt span {
+    font-size: 0.875rem;
+    padding: 0px 12px;
+  }
+}
