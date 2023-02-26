@@ -139,6 +139,7 @@
 @media(max-width:450px) {
   .projeto {
     width: 100%;
+    transition: all 1s ease-out;
   }
 
   .p1 p {
