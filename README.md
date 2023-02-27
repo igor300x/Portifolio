@@ -23,7 +23,8 @@ Project My Portifolio.
 
 My Portifolio, Front-end operation created with HTML5, CSS and JavaScript.🚀 <br>
 This is a portfolio site that showcases my experiences and skills as a front-end developer and other back-end programming technologies.<br>
-Contains UI items, uses with interactive animations using CSS JavaScript, CEO organized structure and Clean code.
+Contains UI items, uses with interactive animations using CSS JavaScript, CEO organized structure and Clean code. <br>
+Responsive website for all screens in web and mobile version.
 
 
 -Technologies used:
